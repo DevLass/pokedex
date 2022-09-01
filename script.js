@@ -17,10 +17,10 @@ const insertPokemonsIntoPage = (pokemons) => {
         const elementTypes = types.map((typeInfo) => typeInfo.type.name);
 
         accumulator += `
-        <li class="card ${elementTypes[0]}">
+        <li class="card">
             <img class="card-image" alt="${name}" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png" />
             <h2 class="card-title">${id}. ${name} </h2>
-            <p class="card-subtitle"> ${elementTypes.join("")}</p>
+            <p class="card-subtitle"> ${elementTypes.join(" / ")}</p>
         </li>`;
         return accumulator;
     }, "");

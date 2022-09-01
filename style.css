@@ -1,19 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 body {
-	background: #EFEFBB;
-	background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
+	background-image: repeating-linear-gradient(45deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(135deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(256,7%,84%),hsl(256,7%,84%));
 	color: white;
 	margin: 0;
-	font-family: rubik;
+	font-family: 'Bangers', cursive;
 }
 
 .container {
-	padding: 40px;
+	padding: 20px;
 	margin: 0 auto;
 }
 
 h1 {
 	text-align: center;
 	font-size: 54px;
+	font-family: 'Bangers', cursive;
+	text-shadow: 3px 5px black;
+	color: #ecc516;
+	letter-spacing: 3px;
 }
 
 .pokedex {
@@ -28,8 +33,10 @@ h1 {
 	padding: 40px;
 	color: #222;
 	text-align: center;
-	border-radius: 20px;
 	position: relative;
+	border: 5px solid black;
+	border-radius: 2px;
+	background-color: #fcd216;
 }
 
 .card::after {
@@ -37,24 +44,28 @@ h1 {
   display: block;
   width: 50%;
   height: 45%;
-  border-radius: 100%;
-  background-color: #fff;
+  border-radius: 2%;
+  background-color: white;
   opacity: .7;
   position: absolute;
   top: 15%;
   left: 25%;
 }
 
+/*
+
+<li class="card ${elementTypes[0]}"> add this for new color by types (script:js line 20)
+
 .steel {
 	background-color: #f4f4f4;
 }
 
 .fire {
-	background-color: #FDDFDF;
+	background-color: #C83E4D;
 }
 
 .grass {
-	background-color: #DEFDE0;
+	background-color: #ecc516;
 }
 
 .electric {
@@ -78,7 +89,7 @@ h1 {
 }
 
 .poison {
-	background-color: #98d7a5;
+	background-color: #9C7CA5;
 }
 
 .bug {
@@ -103,7 +114,7 @@ h1 {
 
 .normal {
 	background-color: #F5F5F5;
-}
+} */
 
 .card:hover {
 	animation: bounce 0.5s linear;
@@ -120,7 +131,7 @@ h1 {
 
 .card-subtitle {
 	margin-top: 5px;
-	color: #666;
+	color: rgb(255, 255, 255);
 	font-weight: lighter;
 	position: relative;
 	z-index: 2;
