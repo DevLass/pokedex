@@ -1,7 +1,7 @@
 <h1 align="center"> Hey there, i'm Nich, and this is my Pokedex with Two API rest</h1>
  
 <p align="center">
-  <img src="https://github.com/italicnich/pokedex/blob/main/readmeimg/img-gif.gif" alt="Page Preview">
+  <img src="https://github.com/DevLass/pokedex/blob/main/readmeimg/img-gif.gif" alt="Page Preview">
 </p>
 
 <h3 align="justify"> <i>Hey there, gradually coming back here with more projects. This is a simple search page with API consumption, which I used to delve into javascript.</i> </h3>
